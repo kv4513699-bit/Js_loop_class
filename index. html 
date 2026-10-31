@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Loops - Day 10</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="container">
+<h1>JavaScript Loops - Day 10 (12pm)</h1>
+<div class="card grid">
+<a href="01-for-loop.html" class="box">01 - For Loop</a>
+<a href="02-dob-dropdown.html" class="box">02 - DOB Dropdown (New Style)</a>
+<a href="03-while-loop.html" class="box">03 - While Loop</a>
+<a href="04-do-while.html" class="box">04 - Do While</a>
+<a href="05-practice.html" class="box full">05 - 8 Practice Questions</a>
+</div></div></body></html>
