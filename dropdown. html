@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="stylesheet" href="style.css"></head>
+<body><div class="container"><div class="card">
+<h2>DOB - New Style (Old document.write replaced)</h2>
+<div class="row" style="display:flex;gap:10px">
+<div><label>Day</label><select id="dd"></select></div>
+<div><label>Month</label><select id="mm"></select></div>
+<div><label>Year</label><select id="yy"></select></div>
+</div></div></div>
+<script>
+let dd=document.getElementById("dd"),mm=document.getElementById("mm"),yy=document.getElementById("yy");
+for(let i=1;i<=31;i++) dd.innerHTML+=`<option>${i}</option>`;
+let m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+for(let i=0;i<12;i++) mm.innerHTML+=`<option value="${i+1}">${m[i]}</option>`;
+for(let i=2026;i>=1980;i--) yy.innerHTML+=`<option>${i}</option>`;
+</script></body></html>
