@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head><title>Loop Practice</title></head>
+<body>
+<script>
+
+// 1. Print numbers from 1 to 10 using a for loop.
+document.write("<h3>1. 1 to 10</h3>");
+for(let i=1; i<=10; i++){
+  document.write(i + " ");
+}
+document.write("<hr>");
+
+// 2. Print all even numbers between 1 and 50.
+document.write("<h3>2. Even 1-50</h3>");
+for(let i=1; i<=50; i++){
+  if(i%2==0) document.write(i + " ");
+}
+document.write("<hr>");
+
+// 3. Print all odd numbers between 1 and 50.
+document.write("<h3>3. Odd 1-50</h3>");
+for(let i=1; i<=50; i++){
+  if(i%2!=0) document.write(i + " ");
+}
+document.write("<hr>");
+
+// 4. Calculate the sum of numbers from 1 to 100.
+document.write("<h3>4. Sum 1-100</h3>");
+let sum=0;
+for(let i=1; i<=100; i++){ sum+=i; }
+document.write("Sum = " + sum + "<hr>");
+
+// 5. Print the multiplication table of any number entered by the user.
+document.write("<h3>5. Table</h3>");
+let a = Number(prompt("5. Enter number for table:"));
+for(let i=1; i<=10; i++){
+  document.write(`${a} * ${i} = ${a*i}<br>`);
+}
+document.write("<hr>");
+
+// 6. Find the factorial of a given number.
+document.write("<h3>6. Factorial</h3>");
+let n = Number(prompt("6. Enter number for factorial:"));
+let fact=1;
+for(let i=1; i<=n; i++){ fact*=i; }
+document.write(`Factorial of ${n} = ${fact}<hr>`);
+
+// 7. Reverse a number using a loop.
+document.write("<h3>7. Reverse Number</h3>");
+let num = Number(prompt("7. Enter number to reverse:"));
+let rev=0;
+let temp=num;
+while(temp>0){
+  rev = rev*10 + temp%10;
+  temp = Math.floor(temp/10);
+}
+document.write(`Reverse of ${num} = ${rev}<hr>`);
+
+// 8. Count the number of digits in a given number.
+document.write("<h3>8. Count Digits</h3>");
+let num2 = Number(prompt("8. Enter number to count digits:"));
+let count=0;
+let t=num2;
+if(t==0) count=1;
+else {
+  while(t>0){
+    count++;
+    t=Math.floor(t/10);
+  }
+}
+document.write(`Digits in ${num2} = ${count}`);
+
+</script>
+</body>
+</html>
